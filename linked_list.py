@@ -17,6 +17,7 @@ class LinkedList(object):
         self.length = 0
 
     def append(self, value):
+        """ append value to the tail of the list """
         currentNode = self.head
         while currentNode.next != None:
             currentNode = currentNode.next
@@ -24,6 +25,7 @@ class LinkedList(object):
         self.length = self.length + 1
 
     def remove(self, value):
+        """ remove value from the list if existed """
         prevNode = self.head
         currentNode = self.head.next
         while currentNode != None and currentNode.value != value:
@@ -40,6 +42,7 @@ class LinkedList(object):
             currentNode = currentNode.next
     
     def __iter__(self):
+        """ iter the value of each node """
         for node in self.iter_node():
             yield node.value
     
