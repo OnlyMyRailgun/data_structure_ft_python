@@ -98,11 +98,3 @@ def test_len():
     assert len(linkedList) == 3
 
     return linkedList
-
-
-test_append()
-test_remove_first_node()
-test_remove_last_node()
-test_remove_middle_node()
-test_remove_non_exist_node()
-test_len()
